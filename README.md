@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Reporte de Problemas</title>
+    <title>Formulario de Peticiones de Turno</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 700px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
@@ -29,20 +29,20 @@
             display: block;
             margin-bottom: 5px;
         }
-        input, select, button {
+        select, input, button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        input:focus, select:focus {
+        select:focus, input:focus {
             border-color: #007bff;
             outline: none;
         }
         button {
             background-color: #007bff;
-            color: #fff;
+            color: white;
             font-size: 16px;
             cursor: pointer;
             border: none;
@@ -61,58 +61,152 @@
 </head>
 <body>
     <div class="container">
-        <h1>Reporte de Problemas</h1>
-        <form id="reporteForm">
-            <!-- Número de tarjeta -->
-            <label for="numeroTarjeta">Número de tarjeta</label>
-            <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de la tarjeta" required>
+        <h1>Formulario de Peticiones de Turno</h1>
+        <form id="peticionesForm">
+            <!-- Seleccionar la zona de preferencia -->
+            <label>Seleccionar la zona de preferencia</label>
+            <select id="zona1" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
+            <select id="zona2" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
+            <select id="zona3" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
+            <select id="zona4" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
+            <select id="zona5" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
+            <select id="zona6" required>
+                <option value="" disabled selected>Seleccione una zona</option>
+                <option>ALB</option>
+                <option>SM1</option>
+                <option>VZA</option>
+                <option>SM2</option>
+                <option>CSU</option>
+                <option>NTO</option>
+            </select>
 
-            <!-- Problema o situación -->
-            <label for="problema">Problema o situación</label>
-            <select id="problema" name="problema" required>
+            <!-- Turno preferido de mayor a menor -->
+            <label>Turno preferido de mayor a menor</label>
+            <select id="turno1" required>
+                <option value="" disabled selected>Seleccione un turno</option>
+                <option>Turno 1</option>
+                <option>Turno 2</option>
+                <option>Turno 3</option>
+                <option>Turno 4</option>
+            </select>
+            <select id="turno2" required>
+                <option value="" disabled selected>Seleccione un turno</option>
+                <option>Turno 1</option>
+                <option>Turno 2</option>
+                <option>Turno 3</option>
+                <option>Turno 4</option>
+            </select>
+            <select id="turno3" required>
+                <option value="" disabled selected>Seleccione un turno</option>
+                <option>Turno 1</option>
+                <option>Turno 2</option>
+                <option>Turno 3</option>
+                <option>Turno 4</option>
+            </select>
+            <select id="turno4" required>
+                <option value="" disabled selected>Seleccione un turno</option>
+                <option>Turno 1</option>
+                <option>Turno 2</option>
+                <option>Turno 3</option>
+                <option>Turno 4</option>
+            </select>
+
+            <!-- Motivo del turno -->
+            <label for="motivoTurno">Motivo del turno</label>
+            <input type="text" id="motivoTurno" name="motivoTurno" required>
+
+            <!-- Seleccionar la secuencia preferida -->
+            <label>Seleccionar la secuencia preferida</label>
+            <select id="secuencia1" required>
+                <option value="" disabled selected>Seleccione una secuencia</option>
+                <option>Secuencia 1</option>
+                <option>Secuencia 2</option>
+                <option>Secuencia 3</option>
+                <option>Secuencia 4</option>
+                <option>Secuencia 5</option>
+                <option>Secuencia 6</option>
+                <option>Secuencia 7</option>
+                <option>Secuencia 8</option>
+                <option>Secuencia 9</option>
+                <option>Secuencia A</option>
+                <option>Secuencia B</option>
+            </select>
+
+            <!-- Donde reside -->
+            <label for="residencia">Donde reside</label>
+            <input type="text" id="residencia" name="residencia" required>
+
+            <!-- Dificultad para caminar -->
+            <label>¿Dificultad para caminar o estar de pie?</label>
+            <select id="dificultad" required>
                 <option value="" disabled selected>Seleccione una opción</option>
-                <option value="recargaFallida">Recarga fallida</option>
-                <option value="noEntregoVuelto">No entregó vuelto</option>
+                <option>Sí</option>
+                <option>No</option>
             </select>
 
-            <!-- Hora aproximada y fecha -->
-            <label for="horaFecha">Hora y fecha de la situación</label>
-            <input type="datetime-local" id="horaFecha" name="horaFecha" required>
-
-            <!-- Estación de la situación -->
-            <label for="estacion">Estación de la situación</label>
-            <input type="text" id="estacion" name="estacion" placeholder="Ingrese el nombre de la estación" required>
-
-            <!-- Billete insertado -->
-            <label for="billete">Billete insertado</label>
-            <select id="billete" name="billete" required>
-                <option value="" disabled selected>Seleccione un billete</option>
-                <option value="1">$1</option>
-                <option value="5">$5</option>
-                <option value="10">$10</option>
+            <!-- Cuenta con vehículo -->
+            <label>¿Cuenta con vehículo?</label>
+            <select id="vehiculo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option>Sí</option>
+                <option>No</option>
             </select>
-
-            <!-- Número del equipo -->
-            <label for="numeroEquipo">Número del equipo</label>
-            <input type="text" id="numeroEquipo" name="numeroEquipo" placeholder="Ingrese el número del equipo" required>
 
             <!-- Botón de enviar -->
             <button type="submit">Enviar</button>
         </form>
         <div class="confirmation" id="confirmationMessage">
-            ¡El formulario fue enviado con éxito!
+            ¡Formulario enviado con éxito!
         </div>
     </div>
-
     <script>
-        // Manejo del evento submit del formulario
-        const form = document.getElementById('reporteForm');
+        const form = document.getElementById('peticionesForm');
         const confirmationMessage = document.getElementById('confirmationMessage');
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío tradicional del formulario
-            confirmationMessage.style.display = 'block'; // Muestra el mensaje de confirmación
-            form.reset(); // Resetea los campos del formulario
+            event.preventDefault();
+            confirmationMessage.style.display = 'block';
+            form.reset();
         });
     </script>
 </body>
